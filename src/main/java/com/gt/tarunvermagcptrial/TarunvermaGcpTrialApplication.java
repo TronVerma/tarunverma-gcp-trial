@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TarunvermaGcpTrialApplication {
 
-	@RequestMapping("/topics")
+	@RequestMapping("/")
 	public String home() {
 		return "Hello Docker World";
 	}
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		SpringApplication.run(TarunvermaGcpTrialApplication.class, args);
 	}
 
