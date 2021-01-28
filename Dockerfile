@@ -1,4 +1,4 @@
 FROM java:8
-ARG JAR_FILE=target\tarunverma-gcp-trial-0.0.1-SNAPSHOT.jar
-COPY ${JAR_FILE} app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+COPY . .
+#ENTRYPOINT ["java","-jar","/tarunverma-gcp-trial-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["mvn","spring-boot:run"]
